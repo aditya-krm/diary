@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f100;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #616161d8;
+        border-radius: 50px;
+    }
+}
+#todo-container {
+    margin-left: 2%;
+    height: 85%;
+    overflow-y: scroll;
+}
+ul {
+    list-style-type: none;
+}
+ul li {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.251);
+    margin-bottom: 2px;
+    padding-left: 1%;
+    width: 95%;
+}
+ul li::before {
+    content: '';
+    position: absolute;
+}
+ul li::after {
+    content: 'Delete';
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+    cursor: pointer;
+}
+ul li:hover::after {
+    font-weight: 900;
+    border: 1px solid red;
+}

@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(239, 232, 232), rgb(203, 187, 187));
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f100;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #616161d8;
+      border-radius: 50px;
+    }
+}
+body>h1{
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+p{
+    font-size: 20px;
+    font-weight: 520;
+}
+.main{
+    width: 90%;
+    height: 90vh;
+    margin: 1rem auto 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.292);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.537);
+}
+textarea{
+    width: 98%;
+    height: 100%;
+    margin: 0 1% 0 1%;
+    border: none;
+    border-radius: 10px;
+    text-transform: capitalize;
+    outline: none;
+    padding-left: 10px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.614);
+}
+.upper{
+    width: 100%;
+    height: 65%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.note{
+    min-width: 49%;
+    min-height: 50%;    
+    border: 1px solid rgba(0, 0, 0, 0.292);
+    border-radius: 10px;
+}
+#note-head{
+    height: 10%;
+    padding-left: 1%;
+}
+#note-body{
+    height: 90%;
+}
+.tasks{
+    min-width: 49%;
+    min-height: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.292);
+    border-radius: 10px;
+    padding-left: 1%;
+    overflow: hidden;
+}
+.tasks #day{
+    height: 10%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+}
+.tasks #todo{
+    height: 40%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+    margin-top: 2px;
+}
+.tasks #expense{
+    height: 40%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+    margin-top: 2px;
+}
+#expense-container{
+    height: 85%;
+    overflow-y: scroll;
+}
+.tasks #mood{
+    height: 10%;
+    /* border: 1px solid black; */
+    margin-top: 2px;
+}
+#mood-item{
+    width: 3rem;
+    height: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.51);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+#mood-item:hover{
+    transform: scale(1.05);
+}
+#mood-item:active{
+    transform: scale(0.9);
+}
+.question{
+    min-width: 98.5%;
+    height: 29%;
+    margin: 1%;
+    border: 1px solid rgba(0, 0, 0, 0.292);
+    border-radius: 10px;
+}
+@media (max-width:600px) {
+    .main{
+        width: 100%;
+        height: 100vh;
+    }
+    .tasks{
+        margin: 1% auto;
+    }
+    .upper{
+        display: block;
+    }
+}
