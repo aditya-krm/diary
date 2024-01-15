@@ -23,7 +23,7 @@ addBtn.addEventListener("click",()=>{
         expNumError();
     }else if(expText.value === ''){
         expTextError();
-    }else if(expAmt.value === ''){
+    }else if(expAmt.value === '' || expAmt.value <= 0){
         expNumError();
     }else{
         let li = document.createElement("li");
@@ -40,9 +40,9 @@ addBtn.addEventListener("click",()=>{
         spanCross.setAttribute("id","cross");
         li.appendChild(spanCross);
         saveData();
+        expText.value = '';
+        expAmt.value = '';
     }
-    expText.value = '';
-    expAmt.value = '';
 });
 
 expContainer.addEventListener("click",(e)=>{

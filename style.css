@@ -91,21 +91,25 @@ textarea{
     /* border: 1px solid black; */
     margin-top: 2px;
 }
-#mood-item{
+.mood-item{
     width: 9%;
     height: 70%;
-    border: 1px solid rgba(0, 0, 0, 0.51);
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
     font-weight: 600;
     transition: 0.5s ease;
 }
-#mood-item:hover{
-    transform: scale(1.05);
-}
-#mood-item:active{
-    transform: scale(0.9);
+.selected{
+    width: 9%;
+    height: 70%;
+    border: none;
+    background-color: green;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
 }
 .question{
     min-width: 98.5%;
