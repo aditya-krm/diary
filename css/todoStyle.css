@@ -60,7 +60,7 @@ ul li span {
 ul li span:hover{
     font-weight: 900;
     background-color: #a4a4a4;
-    border: 1px solid rgb(255, 151, 151);
+    border: 1px solid rgba(255, 151, 151, 0.341);
 }
 .todobuild{
     height: 100%;
@@ -129,9 +129,9 @@ p{
     animation: shake 0.35s 10;
 } */
 @keyframes shake {
-    0% { transform: translateX(0) }
+    0% { transform: translateX(0) } 
     25% { transform: translateX(5px) }
     50% { transform: translateX(-5px) }
     75% { transform: translateX(5px) }
     100% { transform: translateX(0) }
-   }
+}

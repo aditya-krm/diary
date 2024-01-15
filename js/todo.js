@@ -4,7 +4,7 @@ let addBtn = document.querySelector("#addbtn");
 // let errorText = document.querySelector(".normal");
 
 function showError(){
-    console.log("Error");
+    // console.log("Error");
     inputBox.classList.toggle("error")
     // errorText.classList.remove("normal");
     // errorText.classList.add("errortext");

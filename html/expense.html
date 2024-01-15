@@ -8,30 +8,28 @@
   </head>
   <body>
     <div class="expensebuild">
-      <p>Expenses</p>
       <div id="add-expenses">
+        <p>Expenses</p>
         <input
           type="text"
           name="expn"
           id="expn"
+          class="inputarea"
+          maxlength="40"
           placeholder="Enter your expense name"
+          title="maximum 46 letter"
         />
-        <input type="number" name="amnt" id="amnt" placeholder="amount" />
-        <button id="add">Add</button>
+        <input
+          type="number"
+          name="amnt"
+          id="amnt"
+          class="numInputArea"
+          placeholder="amount"
+        />
+        <button class="add">Add</button>
       </div>
-      <ul id="expense-container">
-        <li>jakljsd</li>
-        <li>jksadhk</li>
-        <li>jksadhk</li>
-        <li>jksadefhk</li>
-        <li>jksfqafadhk</li>
-        <li>jksadfsddhk</li>
-        <li>jksadhkwhk</li>
-        <li>jksadh</li>
-        <li>jksadfak</li>
-        <li>jksafafdhk</li>
-        <li>jksadfahawk</li>
-      </ul>
+      <ul id="expense-container"></ul>
     </div>
+    <script src="/js/expense.js"></script>
   </body>
 </html>
