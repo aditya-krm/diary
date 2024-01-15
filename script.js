@@ -1,3 +1,4 @@
+// mood javaScript
 let mood = document.querySelector("#mood");
 let selectedButton = null;
 
@@ -31,5 +32,26 @@ function loadInitialMoodStatus() {
     }
   }
 }
-
 loadInitialMoodStatus();
+
+// day,Time,Date,year
+
+const dateObj = new Date();
+const month   = dateObj.getUTCMonth() + 1;
+const date     = dateObj.getUTCDate();
+const year    = dateObj.getUTCFullYear();
+const newDate = `${date}/${month}/${year}`;
+// dom
+let fullDate = document.querySelector("#date");
+let day = document.querySelector("#dayy");
+let fest = document.querySelector("#fest");
+
+
+days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+fullDate.innerHTML = (newDate);
+const today = dateObj.getDay();
+day.innerHTML = days[today];
+
+if(today == 0){
+    fest.innerHTML = "HoliDay"
+}
